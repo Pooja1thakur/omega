@@ -1,0 +1,26 @@
+div{
+    width: 200px;
+    height: 200px;
+background-color: red;
+animation-name: example;
+animation-duration: 2s;
+position: relative;
+animation-iteration-count: infinite;
+animation-direction: reverse;
+animation-timing-function: ease;
+transition: width 2s,height 3s,background-color 2s,transform 2s;
+}
+@keyframes example {
+    0%{background-color: blue;left: 0px; top: 0px;}
+    25%{background-color: green;left: 200px;top: 0px;}
+    50%{background-color: aliceblue;left: 200px;top: 200px;}
+    75%{background-color: rgb(128, 0, 0);left:0px ;top:200px ;}
+    100%{background-color: rgb(128, 85, 0);left: 0px;top: 0px;}
+    
+}
+div:hover{
+    width: 200px;
+    height: 300px;
+    transform: rotate(150deg);
+    background-color: aqua;
+}
